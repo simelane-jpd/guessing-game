@@ -8,7 +8,7 @@ function newGameBtn() {
     randomNum = Math.ceil(Math.random() * 100);
     message.innerHTML = '';
     guessnum.value = undefined;
-    newGame.innerHTML = 'New game started!';
+    newGame.innerHTML = 'New game started';
     setTimeout(function(){
         newGame.innerHTML = "";
     }, 4000);
