@@ -2,6 +2,7 @@ body {
     background-color: #ee9b00;
     
     font-family:cursive;
+    
 }
 
 h1 {
@@ -10,4 +11,6 @@ h1 {
 }
    .buttons {
        padding-left: 1cm;
+       font-family:cursive;
+       box-sizing: 2cm;
    } 

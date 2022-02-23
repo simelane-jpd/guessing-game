@@ -51,17 +51,5 @@ function newGameBtn() {
   
     
 //}
-      
-
-    
-
-
-
-
-
-
-guessBtn.addEventListener('click', () => {
-    guessBtnClicked(guessnum.value);
-  });
- 
-//guessBtn.addEventListener('click', guessBtnClicked(guess.value))
+guessBtn.addEventListener('click', () => {guessBtnClicked(guessnum.value);
+});
