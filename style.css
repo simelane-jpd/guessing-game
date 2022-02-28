@@ -1,5 +1,6 @@
 body {
     background-color: #ee9b00;
+    font-size: 20px; 
     
     font-family:cursive;
     
@@ -13,4 +14,17 @@ h1 {
        padding-left: 1cm;
        font-family:cursive;
        box-sizing: 2cm;
+       
+    
    } 
+   #num {
+    width: 15%;
+    font-size: 20px; 
+    color: #9b2226;
+   }
+
+   #ges {
+    width: 5%;
+    font-size: 20px; 
+    color: #9b2226;
+   }
