@@ -1,6 +1,7 @@
-describe('The Gussing game function' , function() {
+describe('The Guessing game function' , function() {
    
     describe('', function() {
+        
     it ('should return "your guess is too low" if the random number is less than the secret number', function() {
         let playGame = newGameBtn();
             playGame.guessBtnClicked(0);
@@ -20,7 +21,7 @@ describe('The Gussing game function' , function() {
             assert.equal(playGame.guessBtnClicked(23))
         });
 
-        it('should return "guess must be between 1 and 100" if the random number is less or more than the range of 1 and 100', function() {
+        it('should return "guess must be between 1 and 100" if the random number is less than the range of 1 and 100', function() {
             let playGame = newGameBtn();
             playGame.guessBtnClicked(-2);
             assert.equal(playGame.guessBtnClicked('guess must be between 1 and 100'))

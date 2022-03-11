@@ -5,22 +5,17 @@ const message = document.querySelector(".message");
 const newGame = document.querySelector(".newGameMsg");
 
 function newGameBtn() {
-
-
-  setTimeout(function () {
+setTimeout(function () {
     message.innerHTML = ""
   }, 4000)
 
 }
-function outRange() {
 
-}
 function guessBtnClicked(numberguessed) {
   const numberguessed = Number(randomNum.value);
 
   if (numberguessed > 100 || numberguessed < 1) {
     message.innerHTML = 'guess must be between 1 and 100';
-
     setTimeout(function () {
       location.reload()
     }, 4000);
@@ -37,22 +32,18 @@ function guessBtnClicked(numberguessed) {
     setTimeout(function () {
       message.innerHTML = ""
     }, 4000)
+  } else {
+    message.innerHTML = `Correct, the secret number is ${randomNum}`
 
-  
-
-
-
-} else {message.innerHTML = `Correct, the secret number is ${randomNum}`
-
-newGameBtn()
-setTimeout(function () {
-  message.innerHTML = ""
-  location.reload();
-  message.innerHTML = 'New game started!';
-}, 4000)
+    newGameBtn()
+    setTimeout(function () {
+      message.innerHTML = ""
+      location.reload();
+      message.innerHTML = 'New game started!';
+    }, 4000)
+  }
 }
-}
-  
+
 
 
 
